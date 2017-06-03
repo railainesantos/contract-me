@@ -56,4 +56,6 @@ Rails.application.routes.draw do
 
   root to: 'ecommerce#index', as: :ecommerce_root
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
 end
