@@ -1,4 +1,5 @@
 class Professional < ActiveRecord::Base
+  include ProfessionalAdmin
 
   has_attached_file :photo,
   styles: {
