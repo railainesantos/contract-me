@@ -72,7 +72,7 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 	-ms-transition: .5s ease-in;
 }
 .agileits_header {
-    background: #333333;
+    background: #000D1B;
     padding: 12px 0;
 }
 .w3l_offers {
@@ -181,6 +181,7 @@ button.w3view-cart:focus{
 	outline:none;
 }
 .logo_products {
+    background: #011327;
     padding: 2em 0;
 }
 .w3ls_logo_products_left {
@@ -282,7 +283,7 @@ ul.multi-column-dropdown h6 {
     width: 100%;
 }
 .navigation-agileits {
-    background: #fe9126;
+    background: #FF3D00;
 }
 .navbar-nav > li {
     float: left;
@@ -2755,6 +2756,7 @@ ul.faq {
     font-size: 26px;
 }
 .logo_products {
+    background: #011327;
     padding: 1.5em 0;
 }
 .skdslider {
@@ -2819,6 +2821,7 @@ ul.faq {
     width: 92%;
 }
 .logo_products {
+    background: #011327;
     padding: 1em 0;
 }
 .top_brand_left {
