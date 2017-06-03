@@ -14,25 +14,29 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= bootstrap.min
-//= easing
-//= minicart.min
-//= move-top
-//= responsiveslides.min
-//= skdslider.min
+//= bootstrap.min.js
+//= easing.js
+//= minicart.min.js
+//= move-top.js
+//= responsiveslides.min.js
+//= skdslider.min.js
 
-jQuery(document).ready(function($) {
-  $(".scroll").click(function(event){
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+//= require_self
+
+jQuery(document).ready(function(){
+  jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+
+  jQuery('#responsive').change(function(){
+    $('#responsive_wrapper').width(jQuery(this).val());
   });
+
 });
 
 $(document).ready(function() {
   $().UItoTop({ easingType: 'easeOutQuart' });
 });
 
-jQuery(document).ready(function(){
+$(document).ready(function() {
   jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
 
   jQuery('#responsive').change(function(){
