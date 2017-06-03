@@ -15,9 +15,7 @@ Rails.application.routes.draw do
   #   resources :products
 
 
-  #root to: 'ecommerce#index', as: :ecommerce_root
-
-  root to: redirect('/admin')
+  root to: 'ecommerce#index', as: :ecommerce_root
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 

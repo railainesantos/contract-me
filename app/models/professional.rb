@@ -1,5 +1,5 @@
 class Professional < ActiveRecord::Base
-  include ProfessionalAdmin
+  #include ProfessionalAdmin
 
   has_attached_file :avatar,
   styles: {
