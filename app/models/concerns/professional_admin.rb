@@ -27,6 +27,7 @@ module ProfessionalAdmin
             end
             field :avatar
           end
+
       end
     end
   end
