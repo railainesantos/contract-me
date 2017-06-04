@@ -7,7 +7,7 @@
       <figure>
         <div class="snipcart-item block" >
           <div class="snipcart-thumb">
-           <%= link_to image_tag(item.avatar(:original), alt: item.name, title: item.name), 'products.html' %>
+           <%= link_to image_tag("#{item.id}.png", alt: item.name, title: item.name), 'products.html' %>
            <p><%= item.name %></p>
             <div class="stars">
               <i class="fa fa-star blue-star" aria-hidden="true"></i>
