@@ -1,0 +1,17 @@
+pt-BR:
+  activerecord:
+    models:
+      profissonal:
+        one: Profissonal
+        other: Profissonais
+    attributes:
+      professional:
+        name: "Nome"
+        short_description: "Breve descrição"
+        description: "Descrição"
+        inactivated_in: "Inativo em"
+        phone: "Telefone"
+        address: "Endereço"
+        city: "Cidade"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
