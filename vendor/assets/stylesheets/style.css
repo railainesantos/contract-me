@@ -328,7 +328,7 @@ ul.multi-column-dropdown h6 {
     top: -1%;
     right: 10%;
 }
-.top-brands h2,.newproducts-w3agile h3,.login h2,.register h2,.faq-w3agile h3,.brands h3{
+.top-brands h2,.newproducts-w3agile h3,.login h2,.register h2,.faq-w3agile h3{
 	text-align:center;
 	color:#212121;
 	padding-bottom:.5em;
@@ -336,6 +336,15 @@ ul.multi-column-dropdown h6 {
 	font-size: 2.5em;
 	text-transform: uppercase;
 }
+.brands h3{
+    text-align:center;
+    color:#FFF;
+    padding-bottom:.5em;
+    position:relative;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
 .top-brands h2:after,.newproducts-w3agile h3:after,.login h2:after,.register h2:after,.faq-w3agile h3:after,.brands h3:after{
 	content: '';
     background: #3399cc;
@@ -1358,7 +1367,7 @@ ul.faq {
 /*-- //single --*/
 .brands {
     padding: 5em 0;
-    background: #eed3b6;
+    background: #FF3D00;
 }
 .brands-w3l {
     text-align: center;
@@ -1368,7 +1377,7 @@ ul.faq {
     font-size: 17px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #39c;
+    color: #333;
 	background: #fff;
     padding: 16px;
 	display: block;
