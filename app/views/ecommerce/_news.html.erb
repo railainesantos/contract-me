@@ -3,7 +3,7 @@
     <div class="container">
       <h3>New offers</h3>
         <div class="agile_top_brands_grids">
-          <% for i in  1..4 %>
+          <% @new_professionals.each do |n_p| %>
             <div class="col-md-3 top_brand_left-1">
               <div class="hover14 column">
                 <div class="agile_top_brand_left_grid">
@@ -15,9 +15,9 @@
                       <div class="snipcart-item block">
                         <div class="snipcart-thumb">
                           <a href="products.html">
-                            <%= image_tag('14.png')%>
+                            <%= image_tag(n_p.avatar.url)%>
                             </a>
-                          <p>Fried-gram</p>
+                          <p>n_p.name</p>
                           <div class="stars">
                             <i class="fa fa-star blue-star" aria-hidden="true"></i>
                             <i class="fa fa-star blue-star" aria-hidden="true"></i>
@@ -25,7 +25,7 @@
                             <i class="fa fa-star blue-star" aria-hidden="true"></i>
                             <i class="fa fa-star gray-star" aria-hidden="true"></i>
                           </div>
-                            <h4>$35.99 <span>$55.00</span></h4>
+                            <h4>n_p.role</h4>
                         </div>
                         <div class="snipcart-details top_brand_home_details">
                           <form action="#" method="post">
