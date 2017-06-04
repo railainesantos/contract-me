@@ -2,8 +2,8 @@
   <div class="breadcrumbs">
     <div class="container">
       <ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
-        <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-        <li class="active">Singlepage</li>
+        <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+        <li class="active"><%= @professional.name%></li>
       </ol>
     </div>
   </div>
@@ -12,25 +12,25 @@
     <div class="container">
       <div class="agileinfo_single">
 
-        <div class="col-md-4 agileinfo_single_left">
+        <div class="col-md-3 agileinfo_single_left">
           <center>
             <%= image_tag("#{@professional.id}.png", alt: @professional.name, title: @professional.name, id: "example", class: "img-responsive") %>
           </center>
-        </div>
-        <div class="stars">
-          <i class="fa fa-star blue-star" aria-hidden="true"></i>
-          <i class="fa fa-star blue-star" aria-hidden="true"></i>
-          <i class="fa fa-star blue-star" aria-hidden="true"></i>
-          <% if rand(2) == 1 %>
+          <div class="stars">
             <i class="fa fa-star blue-star" aria-hidden="true"></i>
-          <% else %>
+            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+            <i class="fa fa-star blue-star" aria-hidden="true"></i>
+            <% if rand(2) == 1 %>
+              <i class="fa fa-star blue-star" aria-hidden="true"></i>
+            <% else %>
+              <i class="fa fa-star gray-star" aria-hidden="true"></i>
+            <% end %>
+
             <i class="fa fa-star gray-star" aria-hidden="true"></i>
-          <% end %>
+          </div>
 
-          <i class="fa fa-star gray-star" aria-hidden="true"></i>
         </div>
-
-        <div class="col-md-8 agileinfo_single_right">
+        <div class="col-md-9 agileinfo_single_right">
         <h2><%=@professional.name %></h2>
         <h4><%=@professional.role %></h2>
 
