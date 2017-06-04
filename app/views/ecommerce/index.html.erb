@@ -70,28 +70,6 @@
   </div>
 <!-- //top-brands -->
 
-<!--brands-->
-  <div class="brands">
-    <div class="container">
-    <h3 >Brand Store</h3>
-
-      <% arr = ["Borracheiro","Cabelereiro","Chaveiro","Desentupidora","Detetização","Diarista","Eletricista","Encanador","Jardineiro","Mecânico","Pedreiro","Pintor"]%>
-      <% for j in 1..2 %>
-        <div class='brands-agile-<%= j%>'>
-          <% for i in 1..6 %>
-            <div class="col-md-2 w3layouts-brand">
-              <div class="brands-w3l">
-                <p><a href="#"><%= arr[j+i]%></a></p>
-              </div>
-            </div>
-          <%end%>
-        </div>
-        <div class="clearfix"></div>
-      <%end%>
-
-      </div>
-    </div>
-  </div>
-<!--//brands-->
+<%= render 'ecommerce/brand_stores' %>
 
 <%= render 'ecommerce/news' %>
