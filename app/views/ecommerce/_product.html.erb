@@ -1,7 +1,9 @@
 <div class="hover14 column">
   <div class="agile_top_brand_left_grid">
     <div class="agile_top_brand_left_grid_pos">
-      <%=image_tag("offer.png", class: "img-responsive") %>
+      <% if rand(2) == 1 %>
+        <%=image_tag("offer.png", class: "img-responsive") %>
+      <% end %>
     </div>
     <div class="agile_top_brand_left_grid1">
       <figure>
@@ -13,7 +15,12 @@
               <i class="fa fa-star blue-star" aria-hidden="true"></i>
               <i class="fa fa-star blue-star" aria-hidden="true"></i>
               <i class="fa fa-star blue-star" aria-hidden="true"></i>
-              <i class="fa fa-star blue-star" aria-hidden="true"></i>
+              <% if rand(2) == 1 %>
+                <i class="fa fa-star blue-star" aria-hidden="true"></i>
+              <% else %>
+                <i class="fa fa-star gray-star" aria-hidden="true"></i>
+              <% end %>
+
               <i class="fa fa-star gray-star" aria-hidden="true"></i>
             </div>
             <h4><%= item.role%></h4>
