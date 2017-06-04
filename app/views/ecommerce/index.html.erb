@@ -27,19 +27,16 @@
   <!-- top-brands -->
   <div class="top-brands">
     <div class="container">
-    <h2>Top selling offers</h2>
+    <h2>Indicados para você</h2>
       <div class="grid_3 grid_5">
         <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
           <ul id="myTab" class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#expeditions" id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true">Advertised offers</a></li>
-            <li role="presentation"><a href="#tours" role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours">Today Offers</a></li>
+            <li role="presentation" class="active"><a href="#expeditions" id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true">Top Fornecedores</a></li>
+            <li role="presentation"><a href="#tours" role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours">Os mais procurados</a></li>
           </ul>
           <div id="myTabContent" class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="expeditions" aria-labelledby="expeditions-tab">
               <div class="agile-tp">
-                <h5>Advertised this week</h5>
-                <p class="w3l-ad">We've pulled together all our advertised offers into one place, so you won't miss out on a great deal.</p>
-              </div>
               <% @advertised_professionals.each_with_index do |item, i| %>
                 <% if [0, 4].include?(i)%>
                   <div class="agile_top_brands_grids">
@@ -55,8 +52,6 @@
             </div>
             <div role="tabpanel" class="tab-pane fade" id="tours" aria-labelledby="tours-tab">
               <div class="agile-tp">
-                <h5>This week</h5>
-                <p class="w3l-ad">We've pulled together all our advertised offers into one place, so you won't miss out on a great deal.</p>
               </div>
               <% @today_professionals.each_with_index do |item, i| %>
                 <% if [0, 4].include?(i)%>
