@@ -5,8 +5,12 @@ class ProfessionalsController < ApplicationController
   end
 
   def show
-    @professional = Professional.last
+    @professional = Professional.find(permitted_params[:id])
     @new_professionals = Professional.order("RANDOM()").limit(4)
+  end
+
+  def permitted_params
+    params.permit(:id)
   end
 
 end
