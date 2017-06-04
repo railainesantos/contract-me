@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   resources :professionals, only: [:index, :show, :create]
   resources :registers, only: [:index, :create]
 
+  post 'professionals/:id' => 'professionals#show'
+
 
   root to: 'ecommerce#index', as: :ecommerce_root
 
