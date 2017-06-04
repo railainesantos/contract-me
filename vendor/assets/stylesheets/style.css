@@ -345,7 +345,18 @@ ul.multi-column-dropdown h6 {
     text-transform: uppercase;
 }
 
-.top-brands h2:after,.newproducts-w3agile h3:after,.login h2:after,.register h2:after,.faq-w3agile h3:after,.brands h3:after{
+.brands h3:after{
+    content: '';
+    background: #FFF;
+    color:#FFF;
+    height: 2px;
+    width: 15%;
+    position: absolute;
+    bottom: 0%;
+    left: 43%;
+}
+
+.top-brands h2:after,.newproducts-w3agile h3:after,.login h2:after,.register h2:after,.faq-w3agile h3:after{
 	content: '';
     background: #3399cc;
     height: 2px;
