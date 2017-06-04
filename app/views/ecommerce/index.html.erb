@@ -39,13 +39,13 @@
               <div class="agile-tp">
               </div>
               <% @advertised_professionals.each_with_index do |item, i| %>
-                <% if [0, 4].include?(i)%>
+                <% if [0, 3].include?(i)%>
                   <div class="agile_top_brands_grids">
                 <%end%>
                 <div class="col-md-4 top_brand_left">
                   <%= render 'ecommerce/product', :item => item  %>
                 </div>
-                <% if [0, 4].include?(i)%>
+                <% if [2, 5].include?(i)%>
                   <div class="clearfix"> </div>
                   </div>
                 <%end%>
@@ -55,13 +55,13 @@
               <div class="agile-tp">
               </div>
               <% @today_professionals.each_with_index do |item, i| %>
-                <% if [0, 4].include?(i)%>
+                <% if [0, 3].include?(i)%>
                   <div class="agile_top_brands_grids">
                 <%end%>
                 <div class="col-md-4 top_brand_left">
                   <%= render 'ecommerce/product', :item => item %>
                 </div>
-                <% if [0, 4].include?(i)%>
+                <% if [2, 5].include?(i)%>
                   <div class="clearfix"> </div>
                   </div>
                 <%end%>
