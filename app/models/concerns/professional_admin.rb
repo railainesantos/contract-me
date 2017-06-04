@@ -9,6 +9,8 @@ module ProfessionalAdmin
             field :name do
               help '*Ex: Jorgão da borracharia'
             end
+            field :short_description
+            field :description
             field :role do
               default_value "Eletricista"
               help '*Ex: Eletricista'

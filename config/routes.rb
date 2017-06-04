@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+  resources :professionals, only: [:index, :show]
+
 
   root to: 'ecommerce#index', as: :ecommerce_root
 
